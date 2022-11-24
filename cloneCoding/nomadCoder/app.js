@@ -1,42 +1,24 @@
-const a = 5;
-const b = 2;
-let myName = "gaori";
+const title = document.querySelector("div.hello:first-child h1");
+const color = ["red", "green", "navy", "purple"];
+function handleTitleClick() {
+  title.innerText = "That was a right click";
+  title.style.color = color[0];
+}
+function handleMouseEnter() {
+  title.innerText = "The mouse is here! ";
+  title.style.color = color[1];
+}
+function handleMouseLeave() {
+  title.innerText = "The mouse is gone!";
+  title.style.color = color[2];
+}
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hi " + myName);
-myName = "AkO";
-console.log("My new name is " + myName);
+function handWindowResize() {
+  title.innerText = "You just resized!";
+  title.style.color = color[3];
+}
 
-const testNull = null;
-let something;
-console.log(something, testNull);
-
-// array
-const mon = "mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
-const fri = "fri";
-const sat = "sat";
-const sun = "sun";
-const variableWeek = [mon, tue, wed, thu, fri, sat, sun];
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
-console.log(daysOfWeek);
-console.log(daysOfWeek[4]);
-
-// object
-const playerName = "gaori";
-const playerPoints = 3000;
-const playerLogin = false;
-
-const player = {
-  name: "gaori",
-  points: 3000,
-  login: false,
-};
-console.log(player);
-console.log(playerName, player.name);
-player.name = "Ako";
-console.log(playerName, player.name);
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
+window.addEventListener("resize", handWindowResize);
