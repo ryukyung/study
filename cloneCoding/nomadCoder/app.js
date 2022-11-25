@@ -1,12 +1,16 @@
-const h1 = document.querySelector("h1");
+const body = document.querySelector("body");
+const colors = ["cornflowerblue", "green", "yellow", "lightgray"];
 
-function handleTitleClick() {
-  h1.classList.toggle("clicked");
-  // const clickedClassName = "clicked";
-  // if (h1.classList.contains(clickedClassName)) {
-  //   h1.classList.remove(clickedClassName);
-  // } else {
-  //   h1.classList.add(clickedClassName);
-  // }
+body.style.backgroundColor = colors[0];
+
+function changeScreen() {
+  const width = window.innerWidth;
+  if (width <= 400) {
+    body.style.backgroundColor = colors[1];
+  } else if (width > 400 && width <= 800) {
+    body.style.backgroundColor = colors[2];
+  } else {
+    body.style.backgroundColor = colors[3];
+  }
 }
-h1.addEventListener("click", handleTitleClick);
+window.addEventListener("resize", changeScreen);
