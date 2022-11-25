@@ -1,24 +1,12 @@
-const title = document.querySelector("div.hello:first-child h1");
-const color = ["red", "green", "navy", "purple"];
+const h1 = document.querySelector("h1");
+
 function handleTitleClick() {
-  title.innerText = "That was a right click";
-  title.style.color = color[0];
+  h1.classList.toggle("clicked");
+  // const clickedClassName = "clicked";
+  // if (h1.classList.contains(clickedClassName)) {
+  //   h1.classList.remove(clickedClassName);
+  // } else {
+  //   h1.classList.add(clickedClassName);
+  // }
 }
-function handleMouseEnter() {
-  title.innerText = "The mouse is here! ";
-  title.style.color = color[1];
-}
-function handleMouseLeave() {
-  title.innerText = "The mouse is gone!";
-  title.style.color = color[2];
-}
-
-function handWindowResize() {
-  title.innerText = "You just resized!";
-  title.style.color = color[3];
-}
-
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
-window.addEventListener("resize", handWindowResize);
+h1.addEventListener("click", handleTitleClick);
