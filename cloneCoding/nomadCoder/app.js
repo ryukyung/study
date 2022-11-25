@@ -1,16 +1,23 @@
 const body = document.querySelector("body");
-const colors = ["cornflowerblue", "green", "yellow", "lightgray"];
-
-body.style.backgroundColor = colors[0];
-
 function changeScreen() {
   const width = window.innerWidth;
+  const classNames = body.classList;
+  // console.log(body.classList);
   if (width <= 400) {
-    body.style.backgroundColor = colors[1];
+    if (body.classList.contains(classNames)) {
+      body.classList.remove(classNames);
+    }
+    body.classList.add("lightgray");
   } else if (width > 400 && width <= 800) {
-    body.style.backgroundColor = colors[2];
+    if (body.classList.contains(classNames)) {
+      body.classList.remove(classNames);
+    }
+    body.classList.add("green");
   } else {
-    body.style.backgroundColor = colors[3];
+    if (body.classList.contains(classNames)) {
+      body.classList.remove(classNames);
+    }
+    body.classList.add("yellow");
   }
 }
 window.addEventListener("resize", changeScreen);
