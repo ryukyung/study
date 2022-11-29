@@ -1,23 +1,12 @@
-const body = document.querySelector("body");
-function changeScreen() {
-  const width = window.innerWidth;
-  const classNames = body.classList;
-  // console.log(body.classList);
-  if (width <= 400) {
-    if (body.classList.contains(classNames)) {
-      body.classList.remove(classNames);
-    }
-    body.classList.add("lightgray");
-  } else if (width > 400 && width <= 800) {
-    if (body.classList.contains(classNames)) {
-      body.classList.remove(classNames);
-    }
-    body.classList.add("green");
-  } else {
-    if (body.classList.contains(classNames)) {
-      body.classList.remove(classNames);
-    }
-    body.classList.add("yellow");
-  }
+const h1 = document.querySelector(".hello:first-child h1");
+
+function handleTitleClick() {
+  h1.classList.toggle("clicked");
+  //   const clickedClass = "clicked";
+  //   if (h1.classList.contains(clickedClass)) {
+  //     h1.classList.remove(clickedClass);
+  //   } else {
+  //     h1.classList.add(clickedClass);
+  //   }
 }
-window.addEventListener("resize", changeScreen);
+h1.addEventListener("click", handleTitleClick);
