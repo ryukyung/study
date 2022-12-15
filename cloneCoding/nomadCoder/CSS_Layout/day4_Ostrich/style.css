@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  height: 50vh;
+  grid-template:
+    [header-start] "header header header header" 1fr [header-end]
+    [content-start] "content content content nav" 2fr [content-end]
+    [footer-start] "footer footer footer footer" 1fr [footer-end]/ 1fr 1fr 1fr 1fr;
+  place-items: stretch center;
+}
+
+.header {
+  background-color: lightblue;
+  grid-area: header;
+}
+.content {
+  background-color: lightcoral;
+  grid-area: content;
+}
+.nav {
+  background-color: lightcyan;
+  grid-area: nav;
+}
+.footer {
+  background-color: lightgreen;
+  grid-area: footer;
+}
