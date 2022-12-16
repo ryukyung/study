@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* {
+  text-align: center;
+}
+.first-grid,
+.second-grid {
+  height: 45vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.text-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.bg-img:nth-child(2) {
+  background-image: url(./img/backAoO.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-img:nth-child(3) {
+  background-image: url(./img/dog.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bg-img:nth-child(4) {
+  background-image: url(./img/foxWolf.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bg-img:nth-child(5) {
+  background-image: url(./img/thereAkO.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.first-grid .text-box:first-child {
+  background-color: #c0bca7;
+}
+.first-grid .text-box:nth-child(3) {
+  background-color: #fd4713;
+}
+.first-grid .text-box:nth-child(5) {
+  background-color: #847f96;
+}
+.first-grid .text-box:last-child {
+  background-color: #d0fe72;
+}
+.second-grid .text-box:first-child {
+  background-color: #983433;
+}
+.second-grid .text-box:nth-child(2) {
+  background-color: #3aa9fa;
+}
+.second-grid .text-box:nth-child(4) {
+  background-color: #428f7a;
+}
+.second-grid .text-box:last-child {
+  background-color: #e3c4e6;
+}
