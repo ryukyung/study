@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1e84f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 35px 6fr 35px;
+  grid-template-rows: 25px 1fr 1fr 0.1fr;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.top,
+.bottom {
+  grid-column: 1 / 4;
+  border: 2.5px solid #fe6b37;
+  color: #fe6b37;
+  font-size: 23px;
+  padding: auto 0;
+}
+.text-style {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: "Chivo Mono", monospace;
+  border: 2.5px solid #fe6b37;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.left-top {
+  background-color: #fe6b37;
+  color: #fff;
+  font-size: 10px;
+}
+.title {
+  grid-column: 2;
+  grid-row: 2 / 5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./winterMinions.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 80px;
+  font-family: "Rubik Storm", cursive;
+}
+.right-top {
+  background-color: #46ab4e;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+.left-bottom {
+  background-color: #fff;
+  color: #fe6b37;
+  writing-mode: sideways-rl;
+  text-orientation: sideways-right;
+}
+.right-bottom {
+  background-color: #46ab4e;
+  grid-column: -2;
+  grid-row: 3 / -1;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+.icon {
+  background-color: #fff;
+  color: #fe6b37;
+  width: initial;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
