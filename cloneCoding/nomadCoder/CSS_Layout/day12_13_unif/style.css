@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+/* section left start */
+.left {
+  background-color: #fe7300;
+  color: #fe0300;
+  width: 60%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20px repeat(6, 1fr);
+  grid-template-columns: 0.5fr 4fr 1.5fr;
+}
+/* text center */
+.spin,
+.title,
+.text-box p:first-child {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* box border */
+.spin,
+.title,
+.text-box {
+  border: 1px solid #fe0300;
+}
+/* left detail */
+.spin {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.title {
+  width: calc(100% - 20px);
+  justify-content: flex-start;
+  font-size: 50px;
+  padding-left: 20px;
+}
+.text-box p:first-child {
+  width: 100%;
+  height: 50%;
+  border-bottom: 2px solid #fe0300;
+}
+.text-box p:last-child {
+  width: 70%;
+  height: 20%;
+  background-color: #fe0300;
+  color: #fe7300;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+/* section center start */
+.center {
+  background-color: lightcoral;
+  width: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  writing-mode: vertical-rl;
+  font-size: 20px;
+}
+.reverse,
+.copy {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reverse {
+  background-color: #fe00fe;
+}
+.copy {
+  background-color: #1a00fe;
+  transform: rotate(180deg);
+}
+/* section right start */
+.right {
+  background-color: #fe0300;
+  width: 38%;
+  height: 100%;
+}
+.header {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.grid {
+  width: 100%;
+  height: 95%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.info-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.info-box hr {
+  width: 90%;
+  height: 1px;
+  border: 0;
+  background-color: black;
+}
+.info-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.info {
+  font-size: 14px;
+  margin-left: 10px;
+}
