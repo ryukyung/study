@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 98%;
+  height: 98%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) repeat(6, 0.5fr);
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+}
+.office {
+  grid-row: 1 / 6;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid black;
+}
+.small-title {
+  margin-top: 13px;
+  margin-left: 10px;
+}
+.big-title {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 60px;
+}
+.box {
+  width: calc(100% - 10px);
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+}
+.gray {
+  border-top: 1px solid black;
+  background-color: lightgray;
+}
+.bottom {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.bold-text {
+  font-weight: bold;
+}
+/* office end */
+.home {
+  grid-row: 1 / 4;
+  border: 2px solid black;
+  border-left: none;
+}
+.home p {
+  width: calc(100% - 20px);
+  margin: 10px;
+  margin-top: 20px;
+}
+/* home end */
+.top-left {
+  grid-row: 1 / 4;
+  grid-column: 3 / 6;
+  background-image: url(https://i.pinimg.com/564x/f3/ce/20/f3ce20cd8f896414654ab57cfcd942c1.jpg);
+  background-size: contain;
+}
+.top-right {
+  grid-row: 1 / 2;
+  grid-column: 6 / 9;
+  background-image: url(https://i.pinimg.com/750x/dd/ab/f1/ddabf1ac25fcd21348aa2a62c77610de.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.middle-left-long {
+  grid-column: 6 / 8;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/982/126/562/despicable-me-3-minion-best-animation-movies-wallpaper-preview.jpg);
+  background-size: cover;
+}
+.middle-right {
+  background-image: url(https://i.pinimg.com/564x/9c/b9/42/9cb942f02030de13a3a74ba99ab62b9c.jpg);
+  background-size: cover;
+}
+.middle-left {
+  grid-column: 6;
+  background-image: url(https://i.pinimg.com/564x/1c/a9/b3/1ca9b326d124e30a437d2cd75a145969.jpg);
+  background-size: cover;
+}
+.middle-right-long {
+  grid-column: 7 / 9;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/180/214/374/despicable-me-3-agnes-lucy-wilde-gru-wallpaper-preview.jpg);
+  background-size: cover;
+}
+/* right top div cover end */
+.services {
+  grid-row: 4 / 6;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.bottom-left {
+  grid-row: 4 / 6;
+  background-image: url(https://i.pinimg.com/474x/a6/08/c0/a608c0b14dc37b6860561075c4927afe.jpg);
+  background-size: cover;
+}
+
+.bottom-center-up {
+  grid-row: 4;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/405/335/783/minions-2015-latest-photoshoot-wallpaper-preview.jpg);
+  background-size: cover;
+}
+.bottom-center-down {
+  grid-row: 5;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/981/205/253/minions-despicable-me-2-2013-despicable-me-2-wallpaper-preview.jpg);
+  background-size: cover;
+}
+.bottom-right {
+  grid-row: 4 / 6;
+  grid-column: 5 / 9;
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/437/106/381/gru-minions-cream-wallpaper-preview.jpg);
+  background-size: cover;
+}
